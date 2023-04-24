@@ -11,5 +11,6 @@
 
 ## Why Python Is Essential for Data Analysis and Data Science
 ##### https://www.simplilearn.com/why-python-is-essential-for-data-analysis-article
-![Every mistake is an Opportunity to learn something new.](https://www.facebook.com/allauthorpage/photos/a.1686205848102273/3502801113109395/?type=3&theater)
+
+![Every mistake is an Opportunity to learn something new.](https://myexpressionofthoughtsblog.wordpress.com/2019/02/06/learning-from-own-mistakes-quotes/)
 ##### As humans, we're not perfect! Mistakes are okay, as long as we're learning something new. 
