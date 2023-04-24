@@ -15,4 +15,4 @@
 # Favorite Quote Image
 
 ![Every mistake is an Opportunity to learn something new.](https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/119589262_3502801116442728_7627521849227610599_n.png?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=P9pLBVKhthcAX-nLJxf&_nc_ht=scontent-lax3-2.xx&oh=00_AfCu9z9NEvLI6A_XGqy1niq_R8qRRu7OH1Ts7YBKxrXDqA&oe=646D90E3)
-##### As humans, we're not perfect! Mistakes are okay, as long as we're learning something new. 
+##### As humans, we're not perfect! Mistakes are okay, as long as we're learning something new.   
