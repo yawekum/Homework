@@ -1,11 +1,11 @@
 # Yaw Agyekum
 ## About Myself
-##### * Originally from Ghana, West Africa. 
+* Originally from Ghana, West Africa. 
 * An Air Force veteran with a degree in Computer information Systems and Business Management. 
 * Currently working with Intel.
 
 ## Goals for Data Analytics Course
-##### * Understand how data analytics are used in decision making in businesses. 
+* Understand how data analytics are used in decision making in businesses. 
 * Learn new data analytics & Python skills 
 * Pay raise and career progression opportunities. 
 
