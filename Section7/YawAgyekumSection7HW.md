@@ -53,10 +53,10 @@ ORDER BY Make, ModelYear DESC
 ## Question 4
 ## Using EVCharging, Write a query to find out how many many times those stations were used. Order them by the most used to the least used and limit the output to 5 records.
 
-SELECT stationId, count(userId) as 'numUsage'
+SELECT stationId, count(DISTINCT userId) as 'numUsage'
 FROM EVCharging
 GROUP BY stationId
-ORDER BY numUsage DESC
+ORDER BY COUNT (DISTINCT userId) DESC
 LIMIT 5;
 
 ## Question 5
@@ -74,7 +74,7 @@ ORDER BY 2, 3
 SELECT weekday, ROUND (AVG(chargeTimeHrs), 2) as 'highChargeAvg'
 FROM EVCharging
 GROUP BY weekday
-ORDER BY highChargeAvg DESC
+ORDER BY ROUND (AVG(chargeTimeHrs), 2) DESC
 
 ## Question 2
 ## Using, EV charging, Find the total power consumed from charging EV's by each User. Return the userId and name the calculated column, totalPower. Round the answer to 2 deciaml points and list the out put in highest to lowest order. Limit the order to the top 15 users.
@@ -82,15 +82,15 @@ ORDER BY highChargeAvg DESC
 SELECT userId, ROUND (SUM(kwhTotal), 2) as 'totalPower'
 FROM EVCharging
 GROUP BY userId
-ORDER BY  totalPower DESC
+ORDER BY ROUND(SUM( kwhTotal), 2) DESC
 LIMIT 15
 
 ## Question 3
 ## Using dimfacility and factCharge, write a query to find out which type of facility (GROUP BY) has the most amount of charging stations. Return type Facility and name the calculated column numStation. Order the result set from highest to lowest number of charging stations.
 
-SELECT d.typeFacility, COUNT (stationId) as 'num_Station'
-FROM factCharge f INNER JOIN dimFacility d ON f.facilityID = d.FacilityKey
-GROUP BY typeFacility
+SELECT df.typeFacility, COUNT (stationId) as 'num_Station'
+FROM factCharge fc INNER JOIN dimFacility df ON fc.facilityID = df.FacilityKey
+GROUP BY df.typeFacility
 ORDER BY num_Station DESC
 
 ## Question 4
@@ -104,4 +104,4 @@ SELECT userId, MIN(chargeTimeHrs) as 'minTime', MAX (chargeTimeHrs) as 'maxTime'
 FROM EVCharging
 GROUP BY userId
 HAVING chargeTimeHrs > 1
-ORDER BY minTime, maxTime
+ORDER BY 2, 3
